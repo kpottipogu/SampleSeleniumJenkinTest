@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="OS" value="Windows"/>
+  <parameter name="browser" value="Chorme"/>
+  <parameter name="appURL" value="https://www.google.com"/>
+  <listeners>
+    <listener class-name="testBase.CustomListeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testcase.SeleniumTest2">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="firstTest11"/>
+        </methods>
+      </class> <!-- testcase.SeleniumTest2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
